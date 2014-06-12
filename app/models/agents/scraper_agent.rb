@@ -201,7 +201,7 @@ module Agents
               if store_payload!(old_events, result)
                 log "Storing new parsed result for '#{name}': #{result.inspect}"
 				event.payload = event.payload.merge(result)
-                create_event event
+                create_event event.payload
               end
             end
           end
