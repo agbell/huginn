@@ -37,7 +37,7 @@ bash "Setting default ruby and gem versions to 1.9" do
 end
 
 git "/home/huginn/huginn" do
-  repository 'git://github.com/cantino/huginn.git'
+  repository 'git://github.com/agbell/huginn.git'
   reference 'master'
   action :sync
   user "huginn"
